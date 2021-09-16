@@ -145,7 +145,7 @@ section {
   align-items: center;
   min-height: 100vh;
   background-size: cover;
-  padding: 25px;
+  padding: 30px;
   scroll-snap-align: start;
 }
 
@@ -170,8 +170,8 @@ section {
 
   position: absolute;
   width: 100%;
-  height: 80vh;
-  top: 57%;
+  height: 85%;
+  top: 55%;
   left: 50%;
 
   background: rgba(29, 29, 29, 0.3);
@@ -314,9 +314,61 @@ section {
   .showcase {
     display: none;
   }
+
+  .bg-text {
+    display: none;
+  }
+
+  .bg-icon {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-content: space-between;
+    flex-direction: column;
+  }
+
+  .i1 {
+    /* transform: translate(8em, 13rem) scale(7); */
+    transform: translate(9em, 14em) scale(4.5);
+    width: 10%;
+    z-index: -6;
+  }
+  .i2 {
+    /* transform: translate(8em, 37rem) scale(14); */
+    transform: translate(34em, 21em) scale(4.5);
+    width: 10%;
+    z-index: -5;
+  }
+  .i3 {
+    transform: translate(18em, 35em) scale(6);
+    width: 10%;
+    z-index: -5;
+  }
+  .i4 {
+    /* transform: translate(-13em, 22em); */
+    width: 10%;
+    z-index: -5;
+    transform: translate(8em, 13em) scale(3.5);
+  }
+  .i5 {
+    /* transform: translate(-2em, -36em); */
+    width: 10%;
+    z-index: -5;
+    transform: translate(34em, 22em) scale(5.5);
+  }
+  .i6 {
+    /* transform: translate(6em, -47em); */
+    width: 10%;
+    z-index: -5;
+    transform: translate(10em, 38em) scale(12.5);
+  }
+
+  .language-icon {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .body {
     overflow-x: hidden;
   }
@@ -398,33 +450,32 @@ section {
     z-index: -5;
   }
   .i3 {
-    /* transform: translate(8em, 13rem) scale(7); */
     transform: translate(-3em, -3em);
     width: 90%;
     z-index: -5;
   }
   .i4 {
-    /* transform: translate(8em, 13rem) scale(7); */
-    transform: translate(-13em, 22em);
-    width: 156%;
+    /* transform: translate(-13em, 22em); */
+    width: 10%;
     z-index: -5;
+    transform: translate(4em, 11em) scale(7.5);
   }
   .i5 {
-    /* transform: translate(7em, 22rem) scale(4); */
-    transform: translate(-2em, -36em);
-    width: 70%;
-    z-index: -6;
+    /* transform: translate(-2em, -36em); */
+    width: 10%;
+    z-index: -5;
+    transform: translate(17em, 19em) scale(9.5);
   }
   .i6 {
-    /* transform: translate(8em, 13rem) scale(7); */
-    transform: translate(6em, -47em);
-    width: 90%;
+    /* transform: translate(6em, -47em); */
+    width: 10%;
     z-index: -5;
+    transform: translate(4em, 34em) scale(13.5);
   }
 
-  /* .language-icon {
+  .language-icon {
     display: none;
-  } */
+  }
 }
 
 .nav-active {
