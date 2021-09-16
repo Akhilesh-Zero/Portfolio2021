@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gradient: linear-gradient(45deg, #7b4397 0%, #dc2430 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1661;
+}
+
+.container {
+  padding: 20px 70px;
+}
+
+nav {
+  display: flex;
+  padding: 9px;
+  justify-content: space-between;
+  /* background-color: #4E4DD1; */
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
