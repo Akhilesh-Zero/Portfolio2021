@@ -1,6 +1,6 @@
 // import utils from "./utils";
 
-const canvas = document.querySelector(".canvas");
+const canvas = document.querySelector(".canvas-mobile");
 const c = canvas.getContext("2d");
 
 canvas.width = innerWidth;
@@ -79,7 +79,7 @@ function init() {
     const radius = Math.random() * 2 + 2;
     particles.push(
       new Particle(
-        canvas.width / 2,
+        canvas.width,
         canvas.height / 2,
         radius,
         randomColor(colors)
