@@ -777,3 +777,9 @@ Media Queries
   -----------------------------
   */
 
+  #c {
+    /* position: inherit; */
+    height: 89vh;
+    width: 100vw;
+  }
+
