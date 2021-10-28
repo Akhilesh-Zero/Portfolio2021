@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhilesh Verma - A Web Developer Portfolio 2021</title>
+
+    <link rel="stylesheet" href="css/main2.css" />
+    <!-- <link rel="stylesheet" href="css/scroll.css" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4><strong>A1</strong>V</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <main>
+      <div class="main scroll">
+        <section
+          style="display: flex; justify-content: center"
+          class="main-Container"
+        >
+          <div
+            style="
+              transform: translate(0em, -7em);
+              position: absolute;
+              z-index: -10;
+              padding-top: 20vh;
+            "
+            class="inner"
+          >
+            <svg
+              id="blobs"
+              width="100%"
+              height="100vh"
+              viewBox="0 0 900 600"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+            >
+              <g transform="translate(490.6221262744024 290.30141217448227)">
+                <path
+                  id="blob1"
+                  d="M128.9 -135.7C169.4 -88.4 206.2 -44.2 220 13.8C233.9 71.9 224.8 143.8 184.3 200.1C143.8 256.4 71.9 297.2 12.1 285.1C-47.6 272.9 -95.2 207.9 -153.4 151.6C-211.6 95.2 -280.3 47.6 -300.7 -20.4C-321.1 -88.4 -293.1 -176.8 -234.9 -224.1C-176.8 -271.4 -88.4 -277.7 -22.1 -255.6C44.2 -233.5 88.4 -183.1 128.9 -135.7"
+                  fill="#fd1056"
+                ></path>
+              </g>
+              <g
+                transform="translate(504.6123724181724 301.3543980097576)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob2"
+                  d="M161.3 -171.5C196.3 -126.3 203.2 -63.2 194.9 -8.2C186.7 46.7 163.3 93.3 128.3 142.8C93.3 192.3 46.7 244.7 1.2 243.4C-44.2 242.2 -88.4 187.4 -150.9 137.9C-213.4 88.4 -294.2 44.2 -305.8 -11.6C-317.4 -67.4 -259.8 -134.8 -197.3 -180C-134.8 -225.2 -67.4 -248.1 -2.1 -246C63.2 -243.8 126.3 -216.7 161.3 -171.5"
+                  fill="fd1056"
+                ></path>
+              </g>
+
+              <g transform="translate(454.7602911503463 302.3072080373672)">
+                <path
+                  id="blob3"
+                  d="M92.7 -151.8C131.4 -119.4 181.7 -112.7 201.5 -86.9C221.3 -61 210.6 -16.1 199.3 25.2C188 66.5 176 104.3 153.5 136.5C131 168.6 98.1 195.1 57.5 216.4C17 237.6 -31.1 253.6 -76.8 246.9C-122.6 240.2 -166 210.8 -186.7 170.8C-207.5 130.7 -205.7 80 -211.3 31.3C-216.9 -17.4 -229.9 -64.2 -215.5 -99.6C-201.2 -135.1 -159.5 -159.2 -119.1 -190.7C-78.6 -222.3 -39.3 -261.1 -6.1 -251.6C27 -242.1 54.1 -184.1 92.7 -151.8"
+                  fill="#5DFCCA"
+                ></path>
+              </g>
+              <g
+                transform="translate(455.3447434071853 309.8389472923516)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob4"
+                  d="M132.9 -220.7C158.1 -190.7 154.5 -129.8 174.6 -81.1C194.7 -32.5 238.4 4.1 232.1 31.9C225.9 59.8 169.6 79 135.9 117.5C102.2 156 90.9 213.8 63.3 227.1C35.7 240.5 -8.4 209.5 -51.6 190.2C-94.9 170.9 -137.4 163.4 -171.5 139.8C-205.7 116.2 -231.5 76.6 -240.1 33.1C-248.6 -10.5 -239.8 -58 -224 -106.2C-208.1 -154.5 -185.1 -203.4 -146.6 -227.3C-108.1 -251.3 -54.1 -250.1 -0.1 -250C53.9 -249.8 107.8 -250.7 132.9 -220.7"
+                  fill="#5DFCCA"
+                ></path>
+              </g>
+            </svg>
+            <svg
+              id="blobs-mobile"
+              width="100%"
+              height="100vh"
+              viewbox="0 0 450 900"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+            >
+              <g transform="translate(490.6221262744024 290.30141217448227)">
+                <path
+                  id="blob1-mobile"
+                  d="M128.9 -135.7C169.4 -88.4 206.2 -44.2 220 13.8C233.9 71.9 224.8 143.8 184.3 200.1C143.8 256.4 71.9 297.2 12.1 285.1C-47.6 272.9 -95.2 207.9 -153.4 151.6C-211.6 95.2 -280.3 47.6 -300.7 -20.4C-321.1 -88.4 -293.1 -176.8 -234.9 -224.1C-176.8 -271.4 -88.4 -277.7 -22.1 -255.6C44.2 -233.5 88.4 -183.1 128.9 -135.7"
+                  fill="#fd1056"
+                ></path>
+              </g>
+              <g
+                transform="translate(504.6123724181724 301.3543980097576)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob2-mobile"
+                  d="M161.3 -171.5C196.3 -126.3 203.2 -63.2 194.9 -8.2C186.7 46.7 163.3 93.3 128.3 142.8C93.3 192.3 46.7 244.7 1.2 243.4C-44.2 242.2 -88.4 187.4 -150.9 137.9C-213.4 88.4 -294.2 44.2 -305.8 -11.6C-317.4 -67.4 -259.8 -134.8 -197.3 -180C-134.8 -225.2 -67.4 -248.1 -2.1 -246C63.2 -243.8 126.3 -216.7 161.3 -171.5"
+                  fill="fd1056"
+                ></path>
+              </g>
+
+              <g transform="translate(454.7602911503463 302.3072080373672)">
+                <path
+                  id="blob3-mobile"
+                  d="M92.7 -151.8C131.4 -119.4 181.7 -112.7 201.5 -86.9C221.3 -61 210.6 -16.1 199.3 25.2C188 66.5 176 104.3 153.5 136.5C131 168.6 98.1 195.1 57.5 216.4C17 237.6 -31.1 253.6 -76.8 246.9C-122.6 240.2 -166 210.8 -186.7 170.8C-207.5 130.7 -205.7 80 -211.3 31.3C-216.9 -17.4 -229.9 -64.2 -215.5 -99.6C-201.2 -135.1 -159.5 -159.2 -119.1 -190.7C-78.6 -222.3 -39.3 -261.1 -6.1 -251.6C27 -242.1 54.1 -184.1 92.7 -151.8"
+                  fill="#5DFCCA"
+                ></path>
+              </g>
+              <g
+                transform="translate(455.3447434071853 309.8389472923516)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob4-mobile"
+                  d="M132.9 -220.7C158.1 -190.7 154.5 -129.8 174.6 -81.1C194.7 -32.5 238.4 4.1 232.1 31.9C225.9 59.8 169.6 79 135.9 117.5C102.2 156 90.9 213.8 63.3 227.1C35.7 240.5 -8.4 209.5 -51.6 190.2C-94.9 170.9 -137.4 163.4 -171.5 139.8C-205.7 116.2 -231.5 76.6 -240.1 33.1C-248.6 -10.5 -239.8 -58 -224 -106.2C-208.1 -154.5 -185.1 -203.4 -146.6 -227.3C-108.1 -251.3 -54.1 -250.1 -0.1 -250C53.9 -249.8 107.8 -250.7 132.9 -220.7"
+                  fill="#5DFCCA"
+                ></path>
+              </g>
+            </svg>
+            <svg
+              id="blobs-mobile2"
+              width="100%"
+              height="100vh"
+              viewbox="0 0 450 900"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+            >
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 95, 109)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 195, 113)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <defs>
+                <linearGradient
+                  id="gradient2"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 15, 123)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(248, 155, 41)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g transform="translate(421.4581249038703 368.91251601803225)">
+                <path
+                  id="blob1-mobile2"
+                  d="M303.1 -321.7C381.2 -295.7 425 -189.2 430.8 -86.3C436.6 16.6 404.5 115.8 333.9 150.1C263.2 184.4 154.1 153.9 77.7 157.4C1.3 160.9 -42.3 198.4 -70 189.5C-97.6 180.6 -109.4 125.3 -171.3 72.5C-233.1 19.8 -345 -30.4 -369.2 -94.9C-393.3 -159.4 -329.7 -238.3 -253.6 -264.7C-177.4 -291.1 -88.7 -265 11.9 -279.2C112.5 -293.4 225 -347.8 303.1 -321.7"
+                  fill="url(#gradient)"
+                ></path>
+              </g>
+
+              <g
+                transform="translate(432.234394070023 257.64358536429785)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob2-mobile2"
+                  d="M258.9 -242.9C345 -236.2 431 -163.7 455 -73.5C478.9 16.7 440.8 124.6 367.7 175.7C294.6 226.7 186.4 221 96.3 245.5C6.2 270 -66 324.8 -146.6 328C-227.2 331.1 -316.3 282.5 -370.2 205.7C-424.2 128.9 -443 23.7 -410.8 -57.4C-378.6 -138.6 -295.4 -195.7 -218.4 -204C-141.4 -212.3 -70.7 -171.8 7.8 -181.1C86.3 -190.4 172.7 -249.6 258.9 -242.9"
+                  fill="#BB004B"
+                ></path>
+              </g>
+              <g transform="translate(495.3795753065176 283.5974981032872)">
+                <path
+                  id="blob3-mobile2"
+                  d="M136.1 -139.1C206.7 -103 315.1 -88.8 314.9 -59.9C314.8 -31 206.1 12.6 161.2 95.5C116.3 178.5 135.1 300.7 103 334.8C70.9 369 -12.1 315.1 -62.4 258.9C-112.8 202.7 -130.4 144.1 -153.5 93.7C-176.5 43.3 -205 1.1 -193.8 -29.3C-182.6 -59.6 -131.8 -78.1 -92.9 -119.7C-54 -161.3 -27 -226.2 2.9 -229.6C32.8 -233.1 65.6 -175.1 136.1 -139.1"
+                  fill="url(#gradient2)"
+                ></path>
+              </g>
+              <g
+                transform="translate(459.16365810206776 347.2708276760912)"
+                style="visibility: hidden"
+              >
+                <path
+                  id="blob4-mobile2"
+                  d="M75.5 -103.6C111.1 -60.1 162.4 -48.9 177.7 -22.4C193 4 172.3 45.8 148.9 85.6C125.4 125.4 99.3 163.2 67.7 166C36.1 168.8 -0.9 136.6 -23.9 109.3C-47 82 -56 59.8 -86.4 35.9C-116.8 12 -168.7 -13.4 -190 -58C-211.3 -102.5 -202.1 -166.2 -165.3 -209.5C-128.6 -252.9 -64.3 -275.9 -22.2 -249.5C19.9 -223.1 39.9 -147.2 75.5 -103.6"
+                  fill="url(#gradient2)"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            style="margin: 15vh 8rem 20vh 8rem"
+            class="home-section align-item-center content"
+          >
+            <div class="container">
+              <div class="row align-item-center">
+                <div class="home-text">
+                  <h1>Hi, I am A Student, Learner, and Awesome</h1>
+                  <p></p>
+                  <a href="#" class="btn">Contact Me</a>
+                  <a href="#" class="btn">Hire Me</a>
+                </div>
+                <div class="home-img">
+                  <div class="img-box">
+                    <img src="./assets/img/profile-img.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          style="display: flex; justify-content: center"
+          class="main-Container"
+        >
+          <div style="display: flex; width: 100%">
+            <div
+              style="margin: 15vh 8rem 20vh 8rem"
+              class="about home-section align-item-center content"
+            >
+              <div class="about">
+                <!-- <canvas
+                      style="background-color: blueviolet; width: 100%; height: 90vh"
+                    ></canvas> -->
+                <div class="container">
+                  <h2>About Me</h2>
+                </div>
+                <div class="bg-text">
+                  <h2 class="language l1 set1">html</h2>
+
+                  <h2 class="language l2 set2">css</h2>
+                  <h2 class="language l5 set3">javaScript</h2>
+
+                  <h2 class="language l4 set1">react</h2>
+
+                  <h2 class="language l6 set3">npm</h2>
+                  <h2 class="language l3 set2">NodeJs</h2>
+                </div>
+                <!-- <div class="bg-icon">
+                    <img
+                      class="language-icon i1 g1"
+                      src="./assets/img/html-1.svg"
+                      alt=""
+                    />
+                    <img
+                      class="language-icon i2 g2"
+                      src="./assets/img/css-3.svg"
+                      alt=""
+                    />
+                    <img
+                      class="language-icon i3 g3"
+                      src="./assets/img/logo-javascript.svg"
+                      alt=""
+                    />
+                    <img
+                      class="language-icon i4 g2"
+                      src="./assets/img/npm-square-red-1.svg"
+                      alt=""
+                    />
+        
+                    <img
+                      class="language-icon i5 g3"
+                      src="./assets/img/nodejs-icon.svg"
+                      alt=""
+                    />
+                    <img
+                      class="language-icon i6 g1"
+                      src="./assets/img/react-2.svg"
+                      alt=""
+                    />
+                  </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          style="display: flex; justify-content: center; height: 200vh"
+          class="main-Container"
+        >
+          <div
+            style="margin: 15vh 8rem 20vh 8rem"
+            class="work home-section align-item-center content"
+          >
+            <!-- <div style="z-index: -10" class="work"> -->
+            <canvas
+              class="canvas"
+              style="
+                height: 200vh;
+                transform: scale(1.2);
+                background-color: transparent;
+                position: absolute;
+                z-index: -100;
+              "
+            >
+            </canvas>
+
+            <div class="container">
+              <div class="cccontent">
+                <h2>
+                  i can programm in Node Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Hic consequatur libero alias expedita, esse
+                  harum perspiciatis quas corrupti voluptatum ad laborum
+                  provident! Vero corrupti reiciendis iste inventore veniam
+                  praesentium explicabo.
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  numquam architecto laudantium ducimus quidem soluta molestiae
+                  quaerat harum labore nobis est iure itaque cum deleniti
+                  doloremque fuga, aliquam dolore sequi! Lorem ipsum, dolor sit
+                  amet consectetur adipisicing elit. Cumque dolor quidem
+                  voluptate rem provident corporis inventore quos, esse sunt,
+                  eligendi id assumenda. Assumenda cupiditate sed optio
+                  perspiciatis provident inventore esse. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Cumque, officia
+                  repudiandae. Esse dicta cum sapiente numquam sint accusamus ut
+                  odit alias ipsa, aliquam repellendus. Et tempore ad nam earum
+                  saepe.
+                </p>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </section>
+
+        <section
+          style="display: flex; justify-content: center"
+          class="main-Container"
+        >
+          <div
+            style="margin: 15vh 8rem 20vh 8rem"
+            class="contact home-section align-item-center content"
+          >
+            <div class="contact">
+              <div class="container">
+                <h2>contact</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+  <!-- <script src="js/main.js"></script> -->
+  <script src="js/canvas.js"></script>
+</html>

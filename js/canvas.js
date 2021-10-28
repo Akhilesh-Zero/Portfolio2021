@@ -2,6 +2,22 @@
 
 const canvas = document.querySelector(".canvas");
 const c = canvas.getContext("2d");
+const dpi = window.devicePixelRatio;
+
+function fix_dpi() {
+  //create a style object that returns width and height
+  let style = {
+    height() {
+      return +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);
+    },
+    width() {
+      return +getComputedStyle(canvas).getPropertyValue("width").slice(0, -2);
+    },
+  };
+  //set the correct attributes for a crystal clear image!
+  canvas.setAttribute("width", style.width() * dpi);
+  canvas.setAttribute("height", style.height() * dpi);
+}
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
@@ -42,13 +58,14 @@ function distance(x1, y1, x2, y2) {
 }
 
 function Particle(x, y, radius, color) {
+  // fix_dpi();
   this.x = x;
   this.y = y;
   this.radius = radius;
   this.color = color;
   this.radians = Math.random() * Math.PI * 2;
   this.velocity = 0.02;
-  this.distanceFromCenter = randomIntFromRange(10, 400);
+  this.distanceFromCenter = randomIntFromRange(50, 800);
 
   this.update = () => {
     const lastPoint = { x: this.x, y: this.y };
@@ -73,9 +90,10 @@ function Particle(x, y, radius, color) {
 // Implementation
 let particles;
 function init() {
+  fix_dpi();
   particles = [];
 
-  for (let i = 0; i < 150; i++) {
+  for (let i = 0; i < 200; i++) {
     const radius = Math.random() * 2 + 2;
     particles.push(
       new Particle(
