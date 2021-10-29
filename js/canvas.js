@@ -65,7 +65,7 @@ function Particle(x, y, radius, color) {
   this.color = color;
   this.radians = Math.random() * Math.PI * 2;
   this.velocity = 0.02;
-  this.distanceFromCenter = randomIntFromRange(50, 800);
+  this.distanceFromCenter = randomIntFromRange(20, 300);
 
   this.update = () => {
     const lastPoint = { x: this.x, y: this.y };
@@ -90,7 +90,7 @@ function Particle(x, y, radius, color) {
 // Implementation
 let particles;
 function init() {
-  fix_dpi();
+  // fix_dpi();
   particles = [];
 
   for (let i = 0; i < 200; i++) {
