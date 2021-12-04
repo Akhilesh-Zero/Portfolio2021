@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- <meta name="viewport" content="minimum-scale=1" /> -->
+    <meta
+      name="viewport"
+      content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi"
+    />
     <title>Akhilesh Verma - A Web Developer Portfolio 2021</title>
 
     <link rel="stylesheet" href="css/main3.css" />
@@ -13,9 +21,21 @@
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5aaf99ef56.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
+    <!-- Page Loader start-->
+    <div class="page-loader fade-out">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Page loader end -->
+    <nav class="nav hidden">
       <div class="logo">
         <h4><strong>Final</strong>V</h4>
       </div>
@@ -32,22 +52,25 @@
       </div>
     </nav>
 
-    <main class="" style="overflow-x: hidden">
+    <main class="main hidden" style="overflow-x: hidden">
       <section id="home">
         <div class="container">
           <div class="wrap">
-            <h1>Hi, This is an interactive website</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              quisquam?
-              <br />
-              <a href="#" class="btn">Contact Me</a>
-              <a href="#" class="btn">Hire Me</a>
-            </p>
+            <div style="height: 100%" class="row">
+              <div class="home-text">
+                <p>Hi, I'am</p>
+                <h1>Akhilesh Verma</h1>
+                <p>Web Developer</p>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                  quisquam?
+                  <br /> -->
+                <a href="#portfolio" class="btn">My Portfolio</a>
+
+                <!-- </p> -->
+              </div>
+            </div>
           </div>
-          <!-- <div class="showcase">
-            <img src="./assets/img/shutterstock_2014781360.png" alt="" />
-          </div> -->
         </div>
         <!-- <div class="eclips"></div> -->
         <div class="inner">
@@ -208,46 +231,330 @@
       </section>
 
       <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
-        </div>
-        <div class="inner">
-          <div id="center" class="center">
-            <h1 id="word" class="word">
-              <span class="letter">H</span>
-              <span class="letter">T</span>
-              <span class="letter">M</span>
-              <span class="letter">L</span>
-            </h1>
+        <div style="height: auto" class="container">
+          <div class="wrap">
+            <div class="row">
+              <div class="about-text">
+                <h1>about me</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-img">
+                <div class="img-box">
+                  <img src="./assets/img/IMG_0217.JPG" alt="" />
+                </div>
+              </div>
+              <div class="about-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis, optio dignissimos atque fugiat maiores inventore
+                  error iure voluptates esse corrupti tempora, omnis nemo, ipsa
+                  excepturi ut sapiente? Earum, laudantium dicta.
+                </p>
+                <h3>skills</h3>
+                <div class="skills">
+                  <div class="skill-item">html</div>
+                  <div class="skill-item">css</div>
+                  <div class="skill-item">bootstrap</div>
+                  <div class="skill-item">javascript</div>
+                </div>
 
-            <!-- <div id="test"></div> -->
+                <div class="about-tabs">
+                  <button class="tab-item active" data-target="#education">
+                    education
+                  </button>
+                  <button class="tab-item" data-target="#experience">
+                    experience
+                  </button>
+                </div>
+
+                <!--- Educatio tab start-->
+                <div class="tab-content active" id="education">
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="date">2013 - 2016</span>
+                      <h4>Bach of Science - <span>todo university</span></h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint, expedita.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="date">2013 - 2016</span>
+                      <h4>Bach of Science - <span>todo university</span></h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint, expedita.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="date">2013 - 2016</span>
+                      <h4>Bach of Science - <span>todo university</span></h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint, expedita.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--Experiemse start-->
+                <div class="tab-content" id="experience">
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="date">2020 - 2022</span>
+                      <h4>web Developer</h4>
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Doloremque, illum?
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="date">2020 - 2022</span>
+                      <h4>web Developer</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, sequi?
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="date">2020 - 2022</span>
+                      <h4>web Developer</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Minus, necessitatibus?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn">Contact Me</a>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="bg-circles">
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="circle-3"></div>
+          <div class="circle-4"></div>
         </div>
       </section>
 
-      <section id="work">
-        <div class="container">
+      <section style="overflow-x: hidden" class="portfolio" id="portfolio">
+        <div style="height: auto" class="container">
           <div class="wrap">
-            <h2>
-              i can programm in Node Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Hic consequatur libero alias expedita, esse
-              harum perspiciatis quas corrupti voluptatum ad laborum provident!
-              Vero corrupti reiciendis iste inventore veniam praesentium
-              explicabo.
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              numquam architecto laudantium ducimus quidem soluta molestiae
-              quaerat harum labore nobis est iure itaque cum deleniti doloremque
-              fuga, aliquam dolore sequi! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Cumque dolor quidem voluptate rem
-              provident corporis inventore quos, esse sunt, eligendi id
-              assumenda. Assumenda cupiditate sed optio perspiciatis provident
-              inventore esse. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Cumque, officia repudiandae. Esse dicta cum
-              sapiente numquam sint accusamus ut odit alias ipsa, aliquam
-              repellendus. Et tempore ad nam earum saepe.
-            </p>
+            <div class="row">
+              <div class="section-title">
+                <h1>Portfolio</h1>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 1</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem 1 ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure voluptatem voluptatum adipisci, dolore ipsa
+                      nisi accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 2</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem 2 ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure voluptatem voluptatum adipisci, dolore ipsa
+                      nisi accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 3</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem 3 ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure voluptatem voluptatum adipisci, dolore ipsa
+                      nisi accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 4</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem 4 ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure voluptatem voluptatum adipisci, dolore ipsa
+                      nisi accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 5</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem 5 ipsum dolor sit, amet consectetur adipisicing
+                      elit. Iure voluptatem voluptatum adipisci, dolore ipsa
+                      nisi accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+              <!-- Portfolio item start -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img
+                    src="assets/img/project1.JPG"
+                    alt="portfolio item thumb"
+                  />
+                </div>
+                <h3 class="portfolio-item-title">Portfolio Website 6</h3>
+                <a class="btn view-project-btn">view project</a>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Iure voluptatem voluptatum adipisci, dolore ipsa nisi
+                      accusamus optio? Ducimus, assumenda laboriosam?
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>Created - <span>4 Dec 2020</span></li>
+                      <li>Technologies used - <span>html, css</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a href="#" target="_blank">www.domain.com</a></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio item end -->
+            </div>
           </div>
         </div>
         <div class="inner">
@@ -265,67 +572,159 @@
         </div>
       </section>
 
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
+      <section class="contact" id="contact">
+        <div style="height: auto" class="container">
+          <div class="wrap">
+            <div class="row">
+              <div class="section-title">
+                <h1>Contact Me</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="contact-form">
+                <form action="">
+                  <div class="row">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        class="input-control"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        class="input-control"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="subject"
+                        class="input-control"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <textarea
+                        placeholder="Message"
+                        class="input-control"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="submit-btn">
+                      <a href="" type="submit" class="btn">Send Message</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <h3>Email</h3>
+                  <p>example@gmail.com</p>
+                </div>
+                <div class="contact-info-item">
+                  <h3>Phone</h3>
+                  <p>123 456 7890</p>
+                </div>
+                <div class="contact-info-item">
+                  <h3>Follow me</h3>
+                  <div class="social-links">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="inner">
-          <svg
-            id="visual"
-            viewBox="0 0 1440 320"
-            width="1440"
-            height="320"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1"
-          >
-            <defs>
-              <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop
-                  offset="0%"
-                  style="stop-color: rgb(255, 95, 109); stop-opacity: 1"
-                ></stop>
-                <stop
-                  offset="100%"
-                  style="stop-color: rgb(255, 195, 113); stop-opacity: 1"
-                ></stop>
-              </linearGradient>
-              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop
-                  offset="0%"
-                  style="stop-color: rgb(43, 126, 165); stop-opacity: 1"
-                ></stop>
-                <stop
-                  offset="100%"
-                  style="stop-color: rgb(45, 190, 25); stop-opacity: 1"
-                ></stop>
-              </linearGradient>
-            </defs>
+        <!-- <div class="inner">
+          <div class="waves">
+            <svg
+              id="visual"
+              viewBox="0 0 900 600"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+            >
+              <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 95, 109); stop-opacity: 1"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 195, 113); stop-opacity: 1"
+                  ></stop>
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(43, 126, 165); stop-opacity: 1"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(45, 190, 25); stop-opacity: 1"
+                  ></stop>
+                </linearGradient>
+              </defs>
 
-            <path
-              class="st0 w1"
-              d="M0 205L8.3 203.5C16.7 202 33.3 199 49.8 179.8C66.3 160.7 82.7 125.3 99.2 117C115.7 108.7 132.3 127.3 149 127.8C165.7 128.3 182.3 110.7 198.8 121.7C215.3 132.7 231.7 172.3 248.2 169.2C264.7 166 281.3 120 298 103.5C314.7 87 331.3 100 347.8 98.8C364.3 97.7 380.7 82.3 397.2 100.3C413.7 118.3 430.3 169.7 447 191.2C463.7 212.7 480.3 204.3 496.8 178.2C513.3 152 529.7 108 546.2 115.7C562.7 123.3 579.3 182.7 596 196.8C612.7 211 629.3 180 645.8 179.3C662.3 178.7 678.7 208.3 695.2 219.2C711.7 230 728.3 222 744.8 224C761.3 226 777.7 238 794.2 239.5C810.7 241 827.3 232 844 222C860.7 212 877.3 201 893.8 176.3C910.3 151.7 926.7 113.3 943.2 124.2C959.7 135 976.3 195 993 224.5C1009.7 254 1026.3 253 1042.8 220.5C1059.3 188 1075.7 124 1092.2 128.2C1108.7 132.3 1125.3 204.7 1142 213C1158.7 221.3 1175.3 165.7 1191.8 145.7C1208.3 125.7 1224.7 141.3 1241.2 130.8C1257.7 120.3 1274.3 83.7 1291 63.8C1307.7 44 1324.3 41 1340.8 41.7C1357.3 42.3 1373.7 46.7 1390.2 68.3C1406.7 90 1423.3 129 1431.7 148.5L1440 168L1440 321L1431.7 321C1423.3 321 1406.7 321 1390.2 321C1373.7 321 1357.3 321 1340.8 321C1324.3 321 1307.7 321 1291 321C1274.3 321 1257.7 321 1241.2 321C1224.7 321 1208.3 321 1191.8 321C1175.3 321 1158.7 321 1142 321C1125.3 321 1108.7 321 1092.2 321C1075.7 321 1059.3 321 1042.8 321C1026.3 321 1009.7 321 993 321C976.3 321 959.7 321 943.2 321C926.7 321 910.3 321 893.8 321C877.3 321 860.7 321 844 321C827.3 321 810.7 321 794.2 321C777.7 321 761.3 321 744.8 321C728.3 321 711.7 321 695.2 321C678.7 321 662.3 321 645.8 321C629.3 321 612.7 321 596 321C579.3 321 562.7 321 546.2 321C529.7 321 513.3 321 496.8 321C480.3 321 463.7 321 447 321C430.3 321 413.7 321 397.2 321C380.7 321 364.3 321 347.8 321C331.3 321 314.7 321 298 321C281.3 321 264.7 321 248.2 321C231.7 321 215.3 321 198.8 321C182.3 321 165.7 321 149 321C132.3 321 115.7 321 99.2 321C82.7 321 66.3 321 49.8 321C33.3 321 16.7 321 8.3 321L0 321Z"
-              fill="#0066FF"
-              stroke-linecap="round"
-              stroke-linejoin="miter"
-            ></path>
+              <path
+                class="st0 w1"
+                d="M0 205L8.3 203.5C16.7 202 33.3 199 49.8 179.8C66.3 160.7 82.7 125.3 99.2 117C115.7 108.7 132.3 127.3 149 127.8C165.7 128.3 182.3 110.7 198.8 121.7C215.3 132.7 231.7 172.3 248.2 169.2C264.7 166 281.3 120 298 103.5C314.7 87 331.3 100 347.8 98.8C364.3 97.7 380.7 82.3 397.2 100.3C413.7 118.3 430.3 169.7 447 191.2C463.7 212.7 480.3 204.3 496.8 178.2C513.3 152 529.7 108 546.2 115.7C562.7 123.3 579.3 182.7 596 196.8C612.7 211 629.3 180 645.8 179.3C662.3 178.7 678.7 208.3 695.2 219.2C711.7 230 728.3 222 744.8 224C761.3 226 777.7 238 794.2 239.5C810.7 241 827.3 232 844 222C860.7 212 877.3 201 893.8 176.3C910.3 151.7 926.7 113.3 943.2 124.2C959.7 135 976.3 195 993 224.5C1009.7 254 1026.3 253 1042.8 220.5C1059.3 188 1075.7 124 1092.2 128.2C1108.7 132.3 1125.3 204.7 1142 213C1158.7 221.3 1175.3 165.7 1191.8 145.7C1208.3 125.7 1224.7 141.3 1241.2 130.8C1257.7 120.3 1274.3 83.7 1291 63.8C1307.7 44 1324.3 41 1340.8 41.7C1357.3 42.3 1373.7 46.7 1390.2 68.3C1406.7 90 1423.3 129 1431.7 148.5L1440 168L1440 321L1431.7 321C1423.3 321 1406.7 321 1390.2 321C1373.7 321 1357.3 321 1340.8 321C1324.3 321 1307.7 321 1291 321C1274.3 321 1257.7 321 1241.2 321C1224.7 321 1208.3 321 1191.8 321C1175.3 321 1158.7 321 1142 321C1125.3 321 1108.7 321 1092.2 321C1075.7 321 1059.3 321 1042.8 321C1026.3 321 1009.7 321 993 321C976.3 321 959.7 321 943.2 321C926.7 321 910.3 321 893.8 321C877.3 321 860.7 321 844 321C827.3 321 810.7 321 794.2 321C777.7 321 761.3 321 744.8 321C728.3 321 711.7 321 695.2 321C678.7 321 662.3 321 645.8 321C629.3 321 612.7 321 596 321C579.3 321 562.7 321 546.2 321C529.7 321 513.3 321 496.8 321C480.3 321 463.7 321 447 321C430.3 321 413.7 321 397.2 321C380.7 321 364.3 321 347.8 321C331.3 321 314.7 321 298 321C281.3 321 264.7 321 248.2 321C231.7 321 215.3 321 198.8 321C182.3 321 165.7 321 149 321C132.3 321 115.7 321 99.2 321C82.7 321 66.3 321 49.8 321C33.3 321 16.7 321 8.3 321L0 321Z"
+                fill="#0066FF"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+              ></path>
 
-            <path
-              class="st1 w4"
-              d="M0 59L16 61.7C32 64.3 64 69.7 96 78.3C128 87 160 99 192 126.5C224 154 256 197 288 224C320 251 352 262 384 263.5C416 265 448 257 480 259C512 261 544 273 576 238.2C608 203.3 640 121.7 672 114.3C704 107 736 174 768 212C800 250 832 259 864 247.3C896 235.7 928 203.3 960 175.2C992 147 1024 123 1056 116.5C1088 110 1120 121 1152 135.8C1184 150.7 1216 169.3 1248 160.8C1280 152.3 1312 116.7 1344 115.2C1376 113.7 1408 146.3 1424 162.7L1440 179L1440 321L1424 321C1408 321 1376 321 1344 321C1312 321 1280 321 1248 321C1216 321 1184 321 1152 321C1120 321 1088 321 1056 321C1024 321 992 321 960 321C928 321 896 321 864 321C832 321 800 321 768 321C736 321 704 321 672 321C640 321 608 321 576 321C544 321 512 321 480 321C448 321 416 321 384 321C352 321 320 321 288 321C256 321 224 321 192 321C160 321 128 321 96 321C64 321 32 321 16 321L0 321Z"
-              fill="#0066FF"
-              stroke-linecap="round"
-              stroke-linejoin="miter"
-            ></path>
-          </svg>
-        </div>
+              <path
+                class="st1 w4"
+                d="M0 59L16 61.7C32 64.3 64 69.7 96 78.3C128 87 160 99 192 126.5C224 154 256 197 288 224C320 251 352 262 384 263.5C416 265 448 257 480 259C512 261 544 273 576 238.2C608 203.3 640 121.7 672 114.3C704 107 736 174 768 212C800 250 832 259 864 247.3C896 235.7 928 203.3 960 175.2C992 147 1024 123 1056 116.5C1088 110 1120 121 1152 135.8C1184 150.7 1216 169.3 1248 160.8C1280 152.3 1312 116.7 1344 115.2C1376 113.7 1408 146.3 1424 162.7L1440 179L1440 321L1424 321C1408 321 1376 321 1344 321C1312 321 1280 321 1248 321C1216 321 1184 321 1152 321C1120 321 1088 321 1056 321C1024 321 992 321 960 321C928 321 896 321 864 321C832 321 800 321 768 321C736 321 704 321 672 321C640 321 608 321 576 321C544 321 512 321 480 321C448 321 416 321 384 321C352 321 320 321 288 321C256 321 224 321 192 321C160 321 128 321 96 321C64 321 32 321 16 321L0 321Z"
+                fill="#0066FF"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+              ></path>
+            </svg>
+          </div>
+        </div> -->
       </section>
     </main>
+    <!-- Portfolio Item Details Popup Start -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <a class="btn pp-close" href="#portfolio"
+              ><i class="far fa-times-circle"></i
+            ></a>
+            <div class="pp-thumbnail">
+              <img src="/assets/img/project1.JPG" alt="img" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Item Details Popup End -->
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/canvas.js"></script> -->
+    <script src="js/anime.min.js"></script>
+
+    <script src="js/canvas-mobile.js"></script>
   </body>
-
-  <script src="js/main.js"></script>
-  <!-- <script src="js/canvas.js"></script> -->
-  <script src="js/anime.min.js"></script>
-
-  <script src="js/canvas-mobile.js"></script>
 </html>
