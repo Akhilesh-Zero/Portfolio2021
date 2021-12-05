@@ -297,19 +297,22 @@ Page Loader
   
   .nav-links a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 800;
     color: #f6f6f6;
     padding: 8px 15px;
     border-radius: 25px;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 25px;
   }
   
   .nav-links a:hover {
     
     border-radius: 30px;
-    background: transparent;
-    box-shadow: 5px 5px 9px #19191b, -5px -5px 9px #3d3f43;
+    /* background: transparent;
+    box-shadow: 5px 5px 9px #19191b, -5px -5px 9px #3d3f43; */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.5); */
+    background: rgba(255, 255, 255, 0.2);
   }
   
   .burger {
@@ -358,28 +361,54 @@ Page Loader
 /* --------------------
 Button
 -----------------------*/  
-.btn {
+/* .btn {
     display: inline-block;
     padding: 15px 30px;
     color: #fff;
     margin: 20px 20px 0px 20px;
-    /* border-radius: 30px; */
+    
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+    
   
     border-radius: 30px;
     background: transparent;
     box-shadow: 5px 5px 9px #19191b, -5px -5px 9px #3d3f43;
+    
+}  */
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  margin: 20px 20px 0px 20px;
+  
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+
+  border-radius: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+ 
+  
 } 
 
-
+/* .btn:hover {
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: inset 5px 5px 9px #19191b, inset -5px -5px 9px #3d3f43;
+} */
 
 .btn:hover {
     border-radius: 30px;
     background: transparent;
-    box-shadow: inset 5px 5px 9px #19191b, inset -5px -5px 9px #3d3f43;
+    box-shadow: 5px 5px 9px #19191b, -5px -5px 9px #3d3f43;
+    border-top: none;
+    border-left: none;
 }
 
 /*----------------------
@@ -539,8 +568,8 @@ About Section
   }
   
   .about-text .skill-item{
-    background-color: var(--white-alpha-25);
-    border:1px solid car(--white-alpha-40);
+    
+    border:1px solid var(--white-alpha-40);
     padding: 5px 15px;
     text-transform: capitalize;
     margin: 0 10px 10px 0;
@@ -584,11 +613,12 @@ About Section
   
   .about-tabs .tab-item.active::before{
     width: 100%;
-    background-color: var(--mainBg-color);
+    background-color: white;
   }
   
   .about-tabs .tab-item.active{
     color: var(--crimpson);
+    /* color:white; */
     opacity: 1;
     cursor: auto;
   }
@@ -1259,7 +1289,19 @@ Media Queries
   nav{
     margin: 0
   }
-  .nav-links {
+
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--mainBg-color);
+    padding: 8px 15px;
+    border-radius: 25px;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+
+
+  /* .nav-links {
     position: absolute;
     right: -22px;
     height: 85vh;
@@ -1290,7 +1332,7 @@ Media Queries
     left: -2px;
 
     transform: translateX(0%);
-  }
+  } */
     
     #blobs {
       display: none;
